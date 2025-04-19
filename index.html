@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #0056b3;
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #eee;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0056b3;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #0056b3;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to AWS Chinmaya Website</h1>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section>
+    <h2>Steps to Deploy an Application on Amazon ECS!</h2>
+    <ol>
+      <li><strong>Step 1: Launch and Prepare EC2 Instance</strong>
+        <p>
+          Launch an EC2 instance from the AWS Management Console. Connect to the instance, install Docker using the appropriate commands, and verify the Docker installation. Build a Docker image for your application by using a `Dockerfile`.
+        </p>
+      </li>
+      <li><strong>Step 2: Create and Push Image to Amazon ECR</strong>
+        <p>
+          Set up an Amazon Elastic Container Registry (ECR). Authenticate Docker to the ECR using AWS CLI. Tag your Docker image with the repository URI and push the tagged image to ECR.
+        </p>
+      </li>
+      <li><strong>Step 3: Create an Application Load Balancer and Target Group</strong>
+        <p>
+          In the AWS Management Console, create an Application Load Balancer (ALB) and configure a target group. Register the ECS tasks into this target group for traffic management.
+        </p>
+      </li>
+      <li><strong>Step 4: Create ECS Task Definition, Cluster, and Service</strong>
+        <p>
+          Define a task definition in ECS with settings like the ECR image URI, container port mappings, and resource allocations. Set up a cluster (Fargate or EC2-backed) and deploy a service linked to the load balancer target group.
+        </p>
+      </li>
+      <li><strong>Step 5: Validation</strong>
+        <p>
+          Verify the ECS service is running and check the DNS name of the Application Load Balancer. This ensures that the application is accessible and properly deployed.
+        </p>
+      </li>
+      <li><strong>Step 6: Connect DNS with Amazon Route 53</strong>
+        <p>
+          Use Route 53 to create a hosted zone for your domain. Map the ALB's DNS name to a Route 53 record (e.g., A or CNAME record) to route user traffic through your domain.
+        </p>
+      </li>
+      </ol>
+  </section>
+  <section id="about">
+    <h2>About</h2>
+    <p>Find out more about Chinmaya Dalai on <a href="https://in.linkedin.com/in/chinmayadalai" target="_blank">LinkedIn</a>.</p>
+  </section>
+  <section id="services">
+    <h2>Services</h2>
+    <p>Explore my projects on <a href="https://github.com/chikuchinmaya" target="_blank">GitHub</a>.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:awschinmaya@gmail.com">awschinmaya@gmail.com</a>.</p>
+  </section>
+  <footer>
+    &copy; 2025 My Website. All rights reserved.
+  </footer>
+</body>
+</html>
