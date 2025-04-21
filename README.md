@@ -58,14 +58,8 @@ The accompanying HTML file serves as a documentation page, showcasing the deploy
 
 ---
 
-## HTML Documentation
-The HTML file, `index.html`, contains:
-- Detailed deployment steps in an organized format.
-- Links to **About**, **Services**, and **Contact** sections:
-  - **About:** [LinkedIn Profile](https://in.linkedin.com/in/chinmayadalai)
-  - **Services:** [GitHub Repository](https://github.com/chikuchinmaya)
-  - **Contact:** [Email](mailto:awschinmaya@gmail.com)
-
+## Images
+![AWS ECS Deployment] (https://github.com/chikuchinmaya/AWS-Docker-ECS-Fargate-App-Deployment-Project/blob/main/Image/ECS%20ELB.JPG)
 ---
 
 ## How to Use
