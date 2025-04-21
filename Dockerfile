@@ -1,13 +1,13 @@
-FROM centos:centos
 
-# Install Apache HTTP Server
-RUN yum install httpd -y
+FROM httpd:latest
 
-# Copy the web page to the Apache directory 
-COPY index.html /var/www/html/
+RUN echo "ServerName localhost" >> /usr/local/apache2/conf/httpd.conf
 
-# Command to start Apache in the foreground
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+# Copy web page to Apache directory
+COPY index.html /usr/local/apache2/htdocs/
 
 # Expose port 80
 EXPOSE 80
+
+# Start Apache in the foreground
+CMD ["httpd", "-D", "FOREGROUND"]
