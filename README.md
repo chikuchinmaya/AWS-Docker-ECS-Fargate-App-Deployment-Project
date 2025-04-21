@@ -59,7 +59,8 @@ The accompanying HTML file serves as a documentation page, showcasing the deploy
 ---
 
 ## Images
-![AWS ECS Deployment] (https://github.com/chikuchinmaya/AWS-Docker-ECS-Fargate-App-Deployment-Project/blob/main/Image/ECS%20ELB.JPG)
+![AWS ECS Deployment](https://github.com/chikuchinmaya/AWS-Docker-ECS-Fargate-App-Deployment-Project/blob/main/Image/ECS%20ELB.JPG)
+
 ---
 
 ## How to Use
