@@ -59,7 +59,16 @@ The accompanying HTML file serves as a documentation page, showcasing the deploy
 ---
 
 ## Images
-![AWS ECS Deployment](https://github.com/chikuchinmaya/AWS-Docker-ECS-Fargate-App-Deployment-Project/blob/main/Image/ECS%20ELB.JPG)
+
+### ECS Architecture
+![ECS ELB](https://github.com/chikuchinmaya/AWS-Docker-ECS-Fargate-App-Deployment-Project/blob/main/Image/ECS%20ELB.JPG)
+
+### ECR Repository
+![ECR Storage](https://github.com/chikuchinmaya/AWS-Docker-ECS-Fargate-App-Deployment-Project/blob/main/Image/ECR%20Repository.JPG)
+
+### Task Definition in ECS
+![Task Definition](https://github.com/chikuchinmaya/AWS-Docker-ECS-Fargate-App-Deployment-Project/blob/main/Image/ECS%20Task%20Definition.JPG)
+![Service](https://github.com/chikuchinmaya/AWS-Docker-ECS-Fargate-App-Deployment-Project/blob/main/Image/Service.JPG)
 
 ---
 
